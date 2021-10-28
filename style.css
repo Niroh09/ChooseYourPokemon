@@ -1,0 +1,175 @@
+:root {
+  --textColor: rgb(51, 51, 51);
+  --textColorDark: rgb(20, 20, 20);
+  --pokemonYellow: rgb(233, 223, 35);
+  --pokemonYellowHover: rgb(202, 192, 5);
+  --bulbasaurGreen: rgb(1, 113, 67);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  position: relative;
+  max-width: 80px;
+}
+
+header ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header ul li a {
+  color: var(--textColor);
+  font-weight: 400;
+  margin: 0 40px;
+  text-decoration: none;
+}
+
+header ul li a:hover{
+  color: rgba(51, 51, 51, 0.5)
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox {
+  position: inherit;
+  max-width: 600px;
+}
+
+.content .textBox h2 {
+  color: var(--textColor);
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+}
+
+.content .textBox h2 span {
+  color: var(--pokemonYellow);
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.content .textBox p {
+  color: var(--textColor);
+}
+
+.content .textBox a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: var(--pokemonYellow);
+  color: var(--textColor);
+  border-radius: 40px;
+  border: 1px solid var(--textColor);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.content .textBox a:hover {
+  background-color: var(--pokemonYellowHover);
+  color: var(--textColorDark)
+}
+
+.content .imgBox {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  margin-top: 50px;
+}
+
+.content .imgBox img {
+  max-width: 340px;
+}
+
+.thumb {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover {
+  transform: translateY(-15px);
+}
+
+.thumb li img {
+  max-width: 70px;
+}
+
+.social {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  filter: invert(1);
+}
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  margin: 5px 0;
+  transform: scale(0.6);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bulbasaurGreen);
+  clip-path: circle(700px at right 800px);
+}
