@@ -1,12 +1,16 @@
 const pokemonThumb = document.querySelector('.thumb').querySelectorAll('img');
 const pokemon = document.querySelector('.pokemon');
 const circle = document.querySelector('.circle');
+const menuToggle = document.querySelector('.toggle');
+const navigation = document.querySelector('.navigation')
+
 
 //Background Colors
 const bulbasaurColor = '#017143';
 const charmanderColor = '#fa6b05';
 const squirtleColor = '#1b6ef5';
 
+//Change pokemon and circle background
 pokemonThumb.forEach(img => {
   img.addEventListener('click', (e) => {
     if(e.target.alt == 'bulbasaur'){
@@ -21,3 +25,9 @@ pokemonThumb.forEach(img => {
     }
   })
 });
+
+//Toggle responsive menu
+menuToggle.addEventListener('click', () => {
+menuToggle.classList.toggle('active')
+navigation.classList.toggle('active')
+})
