@@ -236,7 +236,7 @@ header ul li a:hover{
   }
 
   .content .textBox {
-    min-height: 400px;
+    min-height: 200px;
   }
 
   .content .textBox h2 {
@@ -255,6 +255,7 @@ header ul li a:hover{
     padding-right: 0;
     justify-content: center;
     margin-top: 120px;
+    width: 100%;
   }
 
   .content .imgBox img {
@@ -276,5 +277,51 @@ header ul li a:hover{
     top: 70%;
     border-bottom-left-radius: 8px;
     border-top-left-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .circle{
+    clip-path: circle(500px at center 1100px);
+  }
+
+  .content .textBox {
+    min-height: 300px;
+  }
+
+  .content .imgBox {
+    margin-top: 5px;
+  }
+
+  .social {
+    top: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content .textBox h2 {
+    font-size: 2.5rem;
+  }
+
+  .content .textBox p {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 350px){
+  .content .textBox h2 {
+    font-size: 2rem;
+  }
+
+  .content .textBox p {
+    font-size: 0.7em;
+  }
+
+  .content .imgBox {
+    margin-top: 15px;
+  }
+
+  .content .imgBox img {
+    max-height: 150px;
   }
 }
